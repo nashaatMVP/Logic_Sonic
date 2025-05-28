@@ -79,15 +79,15 @@ class _MultiSelectionState extends State<MultiSelection> {
                     );
               }),
             ),
-            SizedBox(height: 70),
+            SizedBox(height: 30),
             /// empty List
-            Center(
-              child: Column(
-                spacing: 10,
+            Expanded(
+              child: ListView(
+                padding: EdgeInsets.zero,
                 children: emptyType.map((v) {
                   return Text(v,style: TextStyle(
                     color: Colors.white,
-                    fontSize: 12,
+                    fontSize: 15,
                     fontWeight: FontWeight.w400,
                   ));
                 }).toList(),
