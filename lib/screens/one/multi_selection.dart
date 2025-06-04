@@ -8,7 +8,6 @@ class MultiSelection extends StatefulWidget {
 }
 
 class _MultiSelectionState extends State<MultiSelection> {
-
   List<String> types = [
     "News",
     "Health",
@@ -80,6 +79,8 @@ class _MultiSelectionState extends State<MultiSelection> {
               }),
             ),
             SizedBox(height: 30),
+
+            // => i changed this into  listview to avoid flex error <=
             /// empty List
             Expanded(
               child: ListView(

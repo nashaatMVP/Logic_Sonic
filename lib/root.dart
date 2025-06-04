@@ -3,6 +3,10 @@ import 'package:logic_sonic/screens/one/image_selection.dart';
 import 'package:logic_sonic/screens/one/multi_selection.dart';
 import 'package:logic_sonic/screens/one/single_selection.dart';
 import 'package:logic_sonic/screens/one/toggle_selection.dart';
+import 'package:logic_sonic/screens/two/upload_file.dart';
+import 'package:logic_sonic/screens/two/upload_image.dart';
+import 'package:logic_sonic/screens/two/upload_multi_imgs.dart';
+import 'package:logic_sonic/screens/two/upload_video.dart';
 
 class Root extends StatefulWidget {
   const Root({super.key});
@@ -14,10 +18,17 @@ class Root extends StatefulWidget {
 class _RootState extends State<Root> {
   int selectedIndex = 0;
   List<Widget> screens = [
+    /// First Lesson
     SingleSelection(),
     ImageSelection(),
     ToggleSelection(),
     MultiSelection(),
+
+    /// Second Lesson
+    UploadImage(),
+    UploadMultiImgs(),
+    UploadVideo(),
+    UploadFile(),
   ];
   final PageController controller = PageController();
 

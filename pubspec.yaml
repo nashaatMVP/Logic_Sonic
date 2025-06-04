@@ -16,6 +16,12 @@ dependencies:
 
 
   cupertino_icons: ^1.0.8
+  image_picker: ^1.1.2
+  video_player: ^2.9.5
+  flutter_svg: ^2.1.0
+  file_picker: ^10.1.9
+  syncfusion_flutter_pdfviewer: ^29.2.8
+
 
 dev_dependencies:
   flutter_test:
@@ -34,6 +40,7 @@ flutter:
     - assets/
     - assets/animals/
     - assets/laptop/
+    - assets/svgs/
 
   # fonts:
   #   - family: Schyler
