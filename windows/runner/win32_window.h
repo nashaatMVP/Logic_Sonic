@@ -42,7 +42,7 @@ class Win32Window {
   // Release OS resources associated with window.
   void Destroy();
 
-  // Inserts |content| into the window tree.
+  // Inserts |content| into the window three.
   void SetChildContent(HWND content);
 
   // Returns the backing Window handle to enable clients to set icon and other

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:logic_sonic/screens/fifth/pagination.dart';
+import 'package:logic_sonic/screens/forth/form.dart';
 import 'package:logic_sonic/screens/one/image_selection.dart';
 import 'package:logic_sonic/screens/one/multi_selection.dart';
 import 'package:logic_sonic/screens/one/single_selection.dart';
 import 'package:logic_sonic/screens/one/toggle_selection.dart';
+import 'package:logic_sonic/screens/third/search_feature.dart';
 import 'package:logic_sonic/screens/two/upload_file.dart';
 import 'package:logic_sonic/screens/two/upload_image.dart';
 import 'package:logic_sonic/screens/two/upload_multi_imgs.dart';
@@ -29,6 +32,15 @@ class _RootState extends State<Root> {
     UploadMultiImgs(),
     UploadVideo(),
     UploadFile(),
+
+    /// third Lesson
+    SearchFeature(),
+
+    /// Forth Lesson
+    FormLesson(),
+
+    /// Fifth Lesson and Final
+    Pagination(),
   ];
   final PageController controller = PageController();
 
